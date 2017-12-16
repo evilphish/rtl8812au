@@ -201,7 +201,6 @@ void eeprom_write16(_adapter *padapter, u16 reg, u16 data)
  *		return;
  *	} */
 
-
 	standby(padapter);
 
 	/* write the new word to the EEPROM */
@@ -288,11 +287,7 @@ out:
 #endif
 	return data;
 
-
 }
-
-
-
 
 /* From even offset */
 void eeprom_read_sz(_adapter *padapter, u16 reg, u8 *data, u32 sz)
@@ -331,7 +326,6 @@ out:
 	return;
 }
 
-
 /* addr_off : address offset of the entry in eeprom (not the tuple number of eeprom (reg); that is addr_off !=reg) */
 u8 eeprom_read(_adapter *padapter, u32 addr_off, u8 sz, u8 *rbuf)
 {
@@ -364,11 +358,7 @@ u8 eeprom_read(_adapter *padapter, u32 addr_off, u8 sz, u8 *rbuf)
 	return _TRUE;
 }
 
-
-
 VOID read_eeprom_content(_adapter	*padapter)
 {
-
-
 
 }
